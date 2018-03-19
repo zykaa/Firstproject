@@ -1,0 +1,84 @@
+@charset "utf-8";
+ 
+/**
+ * FileName: base.css
+ * Version: v2.0.1
+ * Description: CSS Reset & Public Components
+ * 该文件样式已经定义完毕，在做修改前先告知  QQ：1315367377 王剑
+ */
+
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,keygen,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,menu,nav,section,summary,time,mark,audio,video,input,textarea,select,button{margin:0;padding:0;border:0;outline:0;}
+html,body,form,fieldset,p,div,h1,h2,h3,h4,h5,h6{-webkit-text-size-adjust:none;font-family: "微软雅黑"; color: #494949;
+}
+article,aside,dialog,figure,footer,header,nav,section{display:block}
+ol,ul,li{list-style:none;}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+del{text-decoration:line-through}
+ins,u,s,a,a:hover{text-decoration:none}
+pre,code,kbd,samp{font-family:inherit}
+em,i,cite,var,address,dfn{font-style:normal}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+html,body,fieldset,img,iframe,abbr{border:0}
+table{border-collapse:collapse;border-spacing:0}
+caption,th{text-align:left;font-weight:normal}
+textarea{overflow:auto;resize:none}
+label,summary{cursor:default}
+a,button,label{cursor:pointer}
+body,textarea,input,button,select,keygen,legend{color:#666}
+html{_background-image:url(about:blank);_background-attachment:fixed}
+body,html{background-color:#fff;font-family:"微软雅黑";}
+html,img{border:0}
+a{color:#494949;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+/*a:hover{color:#494949;}*/
+/*a:hover,a:active{color:#494949;}*/
+iframe{ display: block;}
+input[type="text" i]:disabled{ background: #fff!important;}
+/* function */
+.dn{display:none}
+.db{display:block}
+.di{display:inline}
+.di-b{ display: inline-block;}
+.fl{float:left;}
+.fr{float: right!important;}
+.fn{float:none}
+.pr{position:relative}
+.pa{position:absolute}
+.oh{overflow:hidden}
+.fs12{font-size:12px}
+.fs14{font-size:14px}
+.fs20{font-size:20px!important}
+.fs16{font-size: 16px!important;}
+.fs22{font-size: 22px;}
+.fwb{font-weight:bold}
+.tal{text-align:left}
+.tac{text-align:center}
+.tar{text-align:right}
+.vam{vertical-align:middle}
+.vat{vertical-align:top}
+.wsn{word-wrap:normal;white-space:nowrap}
+.ti{overflow:hidden;text-indent:-999em}
+.ti2{text-indent:2em}
+.cp{cursor:pointer}
+.nus{-webkit-user-select:none;-ms-user-select:none;user-select:none}
+.clear,.cb{overflow:hidden;display:block;clear:both;height:0}
+.clearfix{clear:both}
+.clearfix,.zm{*zoom:1}
+.mtop{margin-top: 0!important;}
+.maring_l{ margin-left: 0!important;}
+.border_l{ border-left: none!important;}
+.border_t{ border-top:none!important;}
+.border_qb{ border: none!important;}
+.p_l{ padding-left: 20px;}
+.c_p{cursor: pointer;}
+.center { position: absolute; top: 50%;left: 50%;-webkit-transform: translate3d(-50%, -50%, 0); 
+-moz-transform: translate3d(-50%, -50%, 0); transform: translate3d(-50%, -50%, 0);
+-ms-transform: translate3d(-50%, -50%, 0); 
+-o-transform: translate3d(-50%, -50%, 0);}
+.centerX { position: absolute; left: 50%;  -webkit-transform: translate3d(-50%, 0, 0); transform: translate3d(-50%, 0, 0); }
+.centerY { position: absolute; top: 50%;-webkit-transform: translate3d(0, -50%, 0); transform: translate3d(0, -50%, 0); }
+/* edge */
+
+.container{ background: #f4f4f4; width: 100%; }
+

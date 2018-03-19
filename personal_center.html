@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<title>首页</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="laydate/need/laydate.css" />
+	</head>
+
+	<body style="position: relative;">
+		<div class="container">
+			<div class="header">
+				<div class="header_center">
+					<div class="header_left oh">
+						<p>
+							<a href="index.html">首页</a>
+							<a href="course.html">课程</a>
+							<a class="header_hover" href="personal_center.html">个人中心</a>
+							<a href="about_us.html">关于我们</a>
+						</p>
+					</div>
+					<div class="header_right">
+						<div>
+							<p class="head_search">
+								<input type="text" />
+								<img src="img/head_search.png">
+							</p>
+						</div>
+						<p class="header_login" id="header_login">登录</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="banner">
+				<img src="img/personal_center.jpg" alt="" />
+			</div>
+			<div class="main personal_main">
+				<div class="personal_left">
+					<div class="perleft_tit">
+						<div class="perl_tie_img"><img src="img/state/primary_school_1.jpg" alt="" /></div>
+						<p>
+							<em>王珊珊</em> 88888888
+						</p>
+					</div>
+					<ul class="perleft_tab" id="perleft_tab">
+						<li class="pertab_hover">个人资料<em>></em></li>
+						<li>我的课程<em>></em></li>
+						<li>开通会员<em>></em></li>
+						<li>密码设置<em>></em></li>
+					</ul>
+				</div>
+				<div class="personal_right" id="personal_right">
+					<div class="dn">
+					<div class="perright_div zl_color"><em class="header_hover">个人资料</em></div>
+					<div class="personal_center">
+						<div class="percenter_left">
+							<p id="head-pic"></p>
+							<span class="uploading">
+								上传头像
+								<input type="file" accept="image/*" id="btn-upload"/>
+							</span>
+						</div>
+						<div  class="percenter_right">
+						<ul>
+							<li>
+								<label>昵称</label>
+								<input type="text" />
+							</li>
+							<li>
+								<label>学生姓名</label>
+								<input type="text" />
+							</li>
+							<li>
+								<label>性别</label>
+								<span class="sex_input" id="sex_checkbox">
+									<em class="sex_hover"><i></i>男</em>
+									<em><i></i>女</em>
+								</span>
+							</li>
+							<li>
+								<label>生日</label>
+								<input class="laydate-icon" onclick="laydate()">
+							</li>
+							<li>
+								<label>所在地</label>
+								<input type="text" />
+							</li>
+							<li>
+								<label>手机号</label>
+								<input type="text" class="input_border" value="15010395819" />
+							</li>
+							<li>
+								<label>就读学校</label>
+								<input type="text" />
+							</li>
+							<li>
+								<label>年级</label>
+								<input type="text" class="grade" />
+							</li>
+							<li>
+								<label></label>
+								<input type="text"  class="input_border color_red" disabled="disabled" value="dsfjkld"/>
+							</li>
+						</ul>
+						<p class="per_button">
+							<span class="save">保存</span>
+							<span>取消</span>
+						</p>
+						</div>
+					</div>
+					</div>
+				    <div class="dn">
+						<div class="perright_div per_color" id="per_tab">
+							<em class="menu_hover">小学</em>
+							<em>初中</em>
+							<em>高中</em>
+						</div>
+						<div id="per_menu">
+						<div class="course_padding">
+							<div class="my_course">
+							<div class="mycourse_tit">语文<i>（至2017-12-6到期）</i><span>续费</span></div>
+							<ul>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_2.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+									</ul>
+							</div>
+							<div class="my_course">
+							<div class="mycourse_tit">数学<i>（至2017-12-6到期）</i><span>续费</span></div>
+							<ul>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+									</ul>
+							</div>
+							<div class="my_course">
+							<div class="mycourse_tit">英语<i>（至2017-12-6到期）</i><span>续费</span></div>
+							<ul>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+									</ul>
+							</div>
+						</div>
+						<div class="course_padding dn">
+							<div class="my_course">
+							<div class="mycourse_tit">语文<i>（至2017-12-6到期）</i><span>续费</span></div>
+							<ul>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_2.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_3.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+									</ul>
+							</div>
+							<div class="my_course">
+							<div class="mycourse_tit">数学<i>（至2017-12-6到期）</i><span>续费</span></div>
+							<ul>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_2.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+									</ul>
+							</div>
+							<div class="my_course">
+							<div class="mycourse_tit">英语<i>（至2017-12-6到期）</i><span>续费</span></div>
+							<ul>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_5.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_4.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_3.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_2.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_3.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_2.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+									</ul>
+							</div>
+						</div>
+						<div class="course_padding dn">
+							<div class="my_course">
+							<div class="mycourse_tit">语文<i>（至2017-12-6到期）</i><span>续费</span></div>
+							<ul>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_3.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_3.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_2.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+									</ul>
+							</div>
+							<div class="my_course">
+							<div class="mycourse_tit">数学<i>（至2017-12-6到期）</i><span>续费</span></div>
+							<ul>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_3.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+									</ul>
+							</div>
+							<div class="my_course">
+							<div class="mycourse_tit">英语<i>（至2017-12-6到期）</i><span>续费</span></div>
+							<ul>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_3.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_3.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_1.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_2.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_2.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_2.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+										<li>
+											<div class="data_personal">
+												<img src="img/state/primary_school_2.jpg" />
+												<div class="yy_hover dn"></div>
+											</div>
+											<p class="conter_ms">
+												<i>数学函数详解</i>
+											</p>
+										</li>
+									</ul>
+							</div>
+						</div>
+				   
+						</div>
+					</div>
+					<div class="">
+					<div class="perright_div zl_color"><em class="header_hover">开通会员</em></div>
+					<div class="personal_center">
+						<div  class="percenter_right percenter_member">
+						<ul>
+							<li>
+								<label>开通服务</label>
+								<input type="text" disabled="disabled" class="input_border" value="本学段年卡会员"/>
+							</li>
+							<li>
+								<label>我的年级</label>
+								<select class="grade" id="grade_id">
+									<option value="0">小学</option>
+									<option value="1">初中</option>
+									<option value="2">高中</option>
+								</select>
+							</li>
+							<li class="percenter_li">
+								<label>开通学科</label>
+							
+								<div class="ktxk" id="subject">
+									<p>
+										<em><i></i>语文</em>
+										<em><i></i>数学</em>
+										<em><i></i>英语</em>
+									</p>
+									<p class="dn">
+										<em ><i></i>语文</em>
+										<em><i></i>数学</em>
+										<em><i></i>英语</em>
+										<em><i></i>化学</em>
+										<em><i></i>物理</em>
+									</p>
+									<p class="dn">
+										<em ><i></i>语文</em>
+										<em><i></i>数学</em>
+										<em><i></i>英语</em>
+										<em><i></i>化学</em>
+										<em><i></i>物理</em>
+
+									</p>
+									<span>*您只能学习本学科的内容哦，购买全科会员更加优惠</span>
+								</div>
+								
+							</li>
+							<li>
+								<label>应付金额</label>
+								<div class="ktxk moeny">
+									<p><em>99元</em>/年<i>(会员有效期2016年12月6日—2017年12月6日)</i></p>
+								</div>
+							</li>
+							<li>
+								<label>手机号</label>
+								<input type="text" class="input_border" value="15010395819">
+							</li>
+							<li>
+								<label>支付方式</label>
+								<p class="payment" id="payment">
+									<em>
+										<span>支付宝</span>
+										<i class="payment_hover dn">
+											支付宝
+										</i>
+									</em>
+									<em id="pay_ewm">
+										<span>微信</span>
+										<i class="payment_hover dn" id="pay_i">
+											微信
+										</i>
+									</em>
+								</p>
+							</li>
+							<li class="ewm dn">
+								<label>二维码</label>
+								<p class="ewm_center">
+									<em><img src="img/state/rem.jpg" alt=""/></em>
+									<span class="ewm_zb"></span>
+								</p>
+							</li>
+						</ul>
+						<p class="button_first mar">
+							<span>立即支付</span>
+						</p>
+						</div>
+					</div>
+					</div>
+					<div class="dn">
+					<div class="perright_div zl_color"><em class="header_hover">修改密码</em></div>
+					<div class="personal_center">
+						<div class="percenter_right">
+						<ul >
+							<li>
+								<label>当前密码</label>
+								<input type="password" placeholder="6-12位字母数字下划线" />
+							</li>
+							<li>
+								<label>新密码</label>
+								<input type="password" />
+							</li>
+							
+							<li>
+								<label>确认密码</label>
+								<input type="password">
+							</li>
+							<li>
+								<label></label>
+								<input type="text"  class="input_border color_red" disabled="disabled" value="dsfjkld"/>
+							</li>
+							
+						</ul>
+						<p class="button_first">
+							<span>保存</span>
+						</p>
+						<div>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			</div>
+			<!--支付成功页面-->
+			<div class="main_succeed main dn">
+				<div class="perright_div zl_color"><em class="header_hover">支付信息</em></div>
+				<div class="succeed_center">
+					<div class="succeed_centerl">
+						<p class="succeed_icon"></p>
+						<p class="succeed_size">支付成功</p>
+					</div>
+					<div class="succeed_centerr">
+						<p>课程信息已经以短信的形式发送到您的手机上，请牢记！</p>
+						<span>
+							<i>登录账号：18612454512</i>
+							<i>登录密码：021230</i>
+							<i>请尽快登录，修改密码</i>
+						</span>
+						<a class="promptly">立即学习</a>
+					</div>
+				</div>
+			</div>
+			<!--支付失败页面-->
+			<div class="main_loser main_succeed main dn">
+				<div class="perright_div zl_color"><em class="header_hover">支付信息</em></div>
+				<div class="loser_center">
+						<p class="succeed_icon"></p>
+						<p class="succeed_size">支付成功</p>
+						<div class="loser_go">
+						<a class="promptly">立即学习</a>
+						<a class="promptly">返回首页</a>
+						</div>
+				</div>
+			</div>
+			<div class="footer">
+				<p>Copyright © 1998 - 2016 Tencent. All Rights Reserved.</p>
+				<p>北京鹦鹉岛科技发展有限公司 版权所有 北京鹦鹉岛科技发展有限公司网络文化经营许可证</p>
+			</div>
+		</div>
+		<!--弹窗-->
+		<div id="login"></div>	
+	</body>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="laydate/laydate.js" ></script>  
+	<script type="text/javascript" src="js/index.js" ></script>
+
+	<script>
+		uploadHeadPic2();//上传图片
+		sex_info();//男女选择
+		subject_tab();//学科多选;
+		payment_tab();//支付切换
+		shade("",".data_personal",".yy_hover")
+		conter_menu("#per_tab em","#per_menu .course_padding");
+		menuleft_tab("#perleft_tab li","#personal_right>div")
+		function payment_tab(){
+			$("#payment span").bind("click",function(){
+				$(this).addClass("dn").next().removeClass("dn");
+				$(this).parents().siblings().find("span").removeClass("dn").next().addClass("dn");
+				if(!($("#pay_i").hasClass("dn"))){
+					$(".ewm").removeClass("dn");
+				}else{
+					$(".ewm").addClass("dn");
+				}
+			});
+			
+		}
+		function uploadHeadPic2() {
+			$('#btn-upload').on('change', function(event) {
+				//console.log(this.files[0]);
+
+				var $headPic = $('#head-pic');
+				// 根据这个 <input> 获取文件的 HTML5 js 对象
+				var files = event.target.files,
+					file;
+				if(files && files.length > 0) {
+					// 获取目前上传的文件
+					file = files[0];
+					// 来在控制台看看到底这个对象是什么
+					console.log(file);
+					// 那么我们可以做一下诸如文件大小校验的动作
+					if(file.size > 1024 * 1024 * 4) {
+						//alert('图片大小不能超过 2MB!');
+						new Alert('图片大小不能超过 4MB!');
+						return false;
+					}
+					/* uploadPicAjax(file);*/
+					// !!!!!!
+					// 下面是关键的关键，通过这个 file 对象生成一个可用的图像 URL
+					// 获取 window 的 URL 工具
+					var URL = window.URL || window.webkitURL;
+					// 通过 file 生成目标 url
+					var imgURL = URL.createObjectURL(file);
+					// 用这个 URL 产生一个 <img> 将其显示出来
+					$headPic.html('');
+					$headPic.append($('<img/>').attr('src', imgURL));
+
+				}
+
+			});
+		}
+		function sex_info(){
+			$("#sex_checkbox em").bind("click",function(){
+				$(this).addClass("sex_hover").siblings().removeClass("sex_hover");
+			});
+		}
+		
+		
+		function subject_tab(){
+			$("#grade_id").bind("change",function(){
+			var grade_index=$(this).val();
+			console.log(grade_index);
+			$("#subject em").removeClass("subject_hover")
+			$("#subject p").eq(grade_index).removeClass("dn").siblings("p").addClass("dn");
+				
+			});
+			$("#subject em").bind("click",function(){
+				if(!($(this).hasClass("subject_hover"))){
+					$(this).addClass("subject_hover");
+				}else{
+				$(this).removeClass("subject_hover");}
+			});
+		}
+	</script>
+
+</html>
